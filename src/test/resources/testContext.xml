@@ -25,6 +25,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd
         ">
+    <context:property-placeholder location="classpath:test.properties"/>
     <context:component-scan base-package="org.springframework.amqp.amqp190" />
     <task:executor id="executor" pool-size="10" queue-capacity="100" rejection-policy="CALLER_RUNS"/> 
 </beans>
